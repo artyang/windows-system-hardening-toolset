@@ -15,3 +15,6 @@ Set-MpPreference -DisableRealtimeMonitoring $false
 
 # To disable across reboots - delete the following registry key
 # HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\WinDefend
+
+# Adding a key to disable anti-spyware to registry
+# New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender" -Name DisableAntiSpyware -Value 1 -PropertyType DWORD -Force
