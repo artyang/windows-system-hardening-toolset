@@ -12,3 +12,6 @@ Set-MpPreference -DisableRealtimeMonitoring $true
 
 # Enable Realtime Monitoring Powershell
 Set-MpPreference -DisableRealtimeMonitoring $false
+
+# To disable across reboots - delete the following registry key
+# HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\WinDefend
