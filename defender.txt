@@ -2,7 +2,7 @@
 sc disable WinDefend
 
 # Query Defender
-sc stop WinDefend
+sc query WinDefend
 
 # Start Defender
 sc start WinDefend
