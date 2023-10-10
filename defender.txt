@@ -1,0 +1,14 @@
+# Disable Defender
+sc disable WinDefend
+
+# Query Defender
+sc stop WinDefend
+
+# Start Defender
+sc start WinDefend
+
+# Disable Realtime Monitoring
+Set-MpPreference -DisableRealtimeMonitoring $true
+
+# Enable Realtime Monitoring Powershell
+Set-MpPreference -DisableRealtimeMonitoring $false
